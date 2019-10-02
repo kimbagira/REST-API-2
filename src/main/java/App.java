@@ -44,7 +44,7 @@ public class App{
             model.put("position",position);
             model.put("role",role);
             User newUser = new User( employee_name,position,role);
-//            newUser.save();
+            newUser.save();
             return new ModelAndView(model, "details.hbs");
         }, new  HandlebarsTemplateEngine());
 
@@ -65,11 +65,12 @@ public class App{
         post("/department", (request, respond) ->{
             Map<String, Object> model = new HashMap<String, Object>();
             String description = request.queryParams("description");
-            String number_workers = request.queryParams("number_workers");
-            Department departement=new Department(description,number_workers);
-//            departement.save();
-            model.put("description, ",description);
-            model.put("number_workers",number_workers);
+            String number_of_workers = request.queryParams("number_of_workers");
+            Department departement=new Department(description,number_of_workers);
+            departement.save();
+            model.put("description",description);
+            model.put("number_of_workers",number_of_workers);
+            model.put("departement",departement);
             return new ModelAndView(model, "details1.hbs");
         }, new  HandlebarsTemplateEngine());
 

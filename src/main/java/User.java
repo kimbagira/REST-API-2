@@ -32,7 +32,7 @@ public class User{
 
     public void save() {
         try(Connection con = db.sql2o.open()) {
-            String sql = "INSERT INTO user1 (employee_name,position,role) VALUES (:employee_name,:position,:role,)";
+            String sql = "INSERT INTO user1 (employee_name,position,role) VALUES (:employee_name,:position,:role)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("employee_name", this.employee_name)
                     .addParameter("position", this.position)
