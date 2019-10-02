@@ -1,0 +1,46 @@
+{{#partial "content"}}
+    <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="top">USER</h1>
+                <form action="/details" method="post">
+                    <div class="form-group">
+                        <label>employee_name</label><br>
+                        <input type="text" id="employee_name" name="employee_name" class="form-control" placeholder="">
+                    </div><br>
+
+                    <div class="form-group">
+                        <label>position</label><br>
+                        <input type="text" id="position" name="position" class="form-control" placeholder="">
+                    </div><br>
+
+
+                    <div class="form-group">
+                        <label>role</label><br>
+                        <input type="text" id="role" name="role" class="form-control" placeholder="">
+                    </div><br>
+
+                    <button style="padding:12px; border-radius: 15px;" type="submit">submit
+                        <span class="glyphicon glyphicon-plus"></span></button>
+                </form>
+
+                <a href="/department">department form</a>
+            </div>
+        </div>
+    </div>
+    </body>
+{{/partial}}
+<style>
+    body{
+    background-image:url('https://thenextweb.com/wp-content/blogs.dir/1/files/2015/06/designer.jpg');
+       background-repeat:no-repeat;
+    background-size:cover;
+       font-size:70px;
+    margin-left:300px;
+    }
+      input{
+    padding:22px;
+    }
+</style>
+{{>layout.hbs}}

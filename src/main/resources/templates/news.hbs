@@ -1,0 +1,39 @@
+{{#partial "content"}}<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+
+            <h1 class="top">NEWS</h1>
+            <form action="/news" method="post">
+                <div class="form-group">
+                    <label>title</label><br>
+                    <input type="text" id="title" name="title" class="form-control" placeholder="">
+                </div>
+
+                <form action="/details" method="post">
+                    <div class="form-group">
+                        <label>content</label><br>
+                        <input type="text" id="content" name="content" class="form-control" placeholder="">
+                    </div><br>
+                    <button style="padding:12px; border-radius: 15px;" type="submit">submit
+                        <span class="glyphicon glyphicon-plus"></span></button>
+                </form>
+</body>
+{{/partial}}
+<style>
+    body{
+    background-image:url('https://image.freepik.com/free-vector/vacation-summer-beach-background_37129-163.jpg');
+       background-repeat:no-repeat;
+    background-size:cover;
+    text-align:center;
+    margin-top:300px;
+    font-size:100px;
+    }
+    input{
+    padding:10px;
+    }
+    {
+
+</style>
+
+{{>layout.hbs}}

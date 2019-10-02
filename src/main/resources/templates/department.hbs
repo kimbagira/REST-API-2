@@ -1,0 +1,35 @@
+{{#partial "content"}}
+    <body>
+    <h1 class="top">Department</h1>
+    <form action="/department" method="post">
+        <div class="form-group">
+            <label>description</label><br>
+            <input type="text" id="description" name="description" class="form-control" placeholder="">
+        </div><br>
+        <div class="form-group">
+            <label>number_of_workers</label><br>
+            <input type="text" id="number_of_workers" name="number_of_workers" class="form-control" placeholder="">
+        </div><br>
+        <button style="padding:12px; border-radius: 15px;" type="submit">submit
+            <span class="glyphicon glyphicon-plus"></span></button>
+    </form>
+    <a href="/news">news form</a>
+
+    </body>
+{{/partial}}
+<style>
+    body{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oL-7sYauljEM0Eo21qA_xCWbrF6J8t3q66gnUvGf9moXaZrMtA');
+       background-repeat:no-repeat;
+    background-size:cover;
+       font-size:70px;
+    margin-left:100px;
+    margin-top:50px;
+    text-align:center;
+    }
+      input{
+    padding:22px;
+    }
+</style>
+
+{{>layout.hbs}}
