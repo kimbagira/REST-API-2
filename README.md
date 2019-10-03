@@ -42,8 +42,7 @@ output
 *each form will give it output
 
 ## LINK OF MY REPOSITORY
-
-https://github.com/kimbagira/REST-API
+https://github.com/kimbagira/REST-API-2
 
 ## BUGS
   no bugs
